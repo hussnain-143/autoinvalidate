@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 128" width="560" height="128" fill="none">
+  <defs>
+    <linearGradient id="light-bg-frame" x1="0" y1="0" x2="560" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FAF8F5" />
+    </linearGradient>
+    <linearGradient id="light-word-grad" x1="220" y1="30" x2="515" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="50%" stop-color="#FF4438" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="light-ring" x1="10" y1="10" x2="106" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Light Frame -->
+  <rect x="2" y="2" width="556" height="124" rx="24" fill="url(#light-bg-frame)" stroke="#E7E5E4" stroke-width="2" />
+
+  <!-- Master Icon Lockup -->
+  <g transform="translate(14, 12)">
+    <rect x="4" y="4" width="96" height="96" rx="24" fill="#1C1917" stroke="url(#light-ring)" stroke-width="2.5" />
+    <ellipse cx="52" cy="38" rx="20" ry="6.5" fill="#292524" stroke="#78716C" stroke-width="1.8" />
+    <path d="M 32 38 V 51 C 32 55 41 58 52 58 C 63 58 72 55 72 51 V 38" fill="#1C1917" stroke="#78716C" stroke-width="1.8" />
+    <path d="M 32 51 V 64 C 32 68 41 71 52 71 C 63 71 72 68 72 64 V 51" fill="#0C0A09" stroke="#A8A29E" stroke-width="1.8" />
+    <path d="M 52 16 A 34 34 0 0 1 86 50" stroke="url(#light-ring)" stroke-width="3" stroke-linecap="round" fill="none" />
+    <polygon points="86,46 91,56 81,53" fill="#0284C7" />
+    <path d="M 52 84 A 34 34 0 0 1 18 50" stroke="url(#light-ring)" stroke-width="3" stroke-linecap="round" fill="none" />
+    <polygon points="18,54 13,44 23,47" fill="#FF4438" />
+    <path d="M 56 18 L 38 50 H 52 L 47 84 L 69 48 H 54 L 56 18 Z" fill="#FFF7ED" stroke="#0C0A09" stroke-width="2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="134" y="68" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="-1.5" fill="#0C0A09">
+    auto<tspan fill="url(#light-word-grad)">invalidate</tspan>
+  </text>
+
+  <!-- Universal Subtitle -->
+  <circle cx="142" cy="94" r="4.5" fill="#FF4438" />
+  <circle cx="155" cy="94" r="4.5" fill="#0284C7" />
+  <text x="168" y="99" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#57534E">
+    ZERO-CONFIG QUERY CACHE <tspan fill="#E11D48">•</tspan> AUTO-INVALIDATES ON WRITE
+  </text>
+</svg>

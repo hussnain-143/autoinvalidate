@@ -1,0 +1,33 @@
+{
+  "name": "autoinvalidate-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for autoinvalidate npm package, Next.js SEO documentation website, and official brand & launch kit.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:pkg": "npm run build --workspace=autoinvalidate",
+    "build:web": "npm run build --workspace=web",
+    "test": "npm run test --workspace=autoinvalidate",
+    "dev:web": "npm run dev --workspace=web",
+    "start:web": "npm run start --workspace=web",
+    "publish:pkg": "npm publish --workspace=autoinvalidate --access public"
+  },
+  "author": "Husnain Ahmed (https://github.com/hussnain-143)",
+  "license": "MIT",
+  "homepage": "https://github.com/hussnain-143/autoinvalidate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussnain-143/autoinvalidate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hussnain-143/autoinvalidate/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

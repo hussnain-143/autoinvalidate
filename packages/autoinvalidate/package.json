@@ -1,0 +1,80 @@
+{
+  "name": "autoinvalidate",
+  "version": "1.0.0",
+  "description": "Zero-config PostgreSQL (pg) + Redis query cache that automatically invalidates cached queries when tables or rows are mutated.",
+  "keywords": [
+    "postgresql",
+    "postgres",
+    "pg",
+    "redis",
+    "ioredis",
+    "cache",
+    "cache-invalidation",
+    "autoinvalidate",
+    "query-cache",
+    "sql-cache",
+    "pern-stack",
+    "mern-stack",
+    "nodejs",
+    "typescript",
+    "singleflight"
+  ],
+  "homepage": "https://github.com/hussnain-143/autoinvalidate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussnain-143/autoinvalidate.git",
+    "directory": "packages/autoinvalidate"
+  },
+  "bugs": {
+    "url": "https://github.com/hussnain-143/autoinvalidate/issues"
+  },
+  "license": "MIT",
+  "author": "Husnain",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/autoinvalidate.test.mjs",
+    "prepublishOnly": "npm run test"
+  },
+  "peerDependencies": {
+    "pg": ">=8.0.0",
+    "ioredis": ">=5.0.0",
+    "redis": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "pg": {
+      "optional": true
+    },
+    "ioredis": {
+      "optional": true
+    },
+    "redis": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 44" width="290" height="44" fill="none">
+  <defs>
+    <linearGradient id="badge-ring" x1="0" y1="0" x2="290" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="287" height="41" rx="20.5" fill="#0C0A09" stroke="url(#badge-ring)" stroke-width="2" />
+  <circle cx="24" cy="22" r="6" fill="#FF4438" />
+  <circle cx="38" cy="22" r="6" fill="#38BDF8" />
+  <path d="M 32 13 L 26 23 H 31 L 29 31 L 36 21 H 31 L 32 13 Z" fill="#FAF8F5" />
+  <text x="54" y="27" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#FAF8F5">
+    autoinvalidate <tspan fill="#FF4438">•</tspan> <tspan fill="#FAF8F5">Zero-Config Cache</tspan>
+  </text>
+</svg>

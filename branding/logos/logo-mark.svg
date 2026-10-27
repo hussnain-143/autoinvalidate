@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <linearGradient id="mark-bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14110F" />
+      <stop offset="50%" stop-color="#0C0A09" />
+      <stop offset="100%" stop-color="#171412" />
+    </linearGradient>
+
+    <linearGradient id="pulse-ring" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="50%" stop-color="#FB7185" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="bolt-grad" x1="52" y1="22" x2="76" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#FFF1F2" />
+      <stop offset="70%" stop-color="#FF4438" />
+      <stop offset="100%" stop-color="#F43F5E" />
+    </linearGradient>
+
+    <radialGradient id="mark-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FF4438" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle Base Frame -->
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#mark-bg)" stroke="url(#pulse-ring)" stroke-width="2.75" />
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#mark-glow)" />
+
+  <!-- Outer Auto-Invalidating Sync Pulse Rings -->
+  <circle cx="64" cy="64" r="44" stroke="#292524" stroke-width="1.5" stroke-dasharray="4 4" />
+  <path d="M 64 20 A 44 44 0 0 1 108 64" stroke="url(#pulse-ring)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <polygon points="108,60 114,72 102,68" fill="#38BDF8" />
+  <path d="M 64 108 A 44 44 0 0 1 20 64" stroke="url(#pulse-ring)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <polygon points="20,68 14,56 26,60" fill="#FF4438" />
+
+  <!-- Universal Multi-Tier Database Core -->
+  <ellipse cx="64" cy="45" rx="24" ry="8" fill="#1C1917" stroke="#57534E" stroke-width="2" />
+  <path d="M 40 45 V 61 C 40 66 50.7 70 64 70 C 77.3 70 88 66 88 61 V 45" fill="#14110F" stroke="#57534E" stroke-width="2" />
+  <path d="M 40 61 V 77 C 40 82 50.7 86 64 86 C 77.3 86 88 82 88 77 V 61" fill="#0C0A09" stroke="#78716C" stroke-width="2" />
+
+  <!-- High-Speed Invalidation Bolt -->
+  <path d="M 69 22 L 47 62 H 64 L 58 106 L 85 60 H 67 L 69 22 Z" fill="url(#bolt-grad)" stroke="#0C0A09" stroke-width="2.5" stroke-linejoin="round" />
+</svg>
