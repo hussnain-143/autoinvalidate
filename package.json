@@ -18,7 +18,7 @@
   },
   "author": "Husnain Ahmed (https://github.com/hussnain-143)",
   "license": "MIT",
-  "homepage": "https://github.com/hussnain-143/autoinvalidate#readme",
+  "homepage": "https://autoinvalidate-pi.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/hussnain-143/autoinvalidate.git"

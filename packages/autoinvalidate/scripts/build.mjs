@@ -21,7 +21,7 @@ const moduleOrder = [
 ];
 
 let bundledEsmBody = `import crypto from 'node:crypto';\nimport { performance } from 'node:perf_hooks';\n\n`;
-let bundledDtsBody = `// Type definitions for autoinvalidate v1.0.0\n// Project: https://github.com/hussnain-143/autoinvalidate\n\n`;
+let bundledDtsBody = `// Type definitions for autoinvalidate v1.0.0\n// Project: https://autoinvalidate-pi.vercel.app\n// Repository: https://github.com/hussnain-143/autoinvalidate\n\n`;
 
 for (const relPath of moduleOrder) {
   const fullPath = path.join(srcDir, relPath);

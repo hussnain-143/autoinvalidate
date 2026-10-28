@@ -19,7 +19,7 @@
     "typescript",
     "singleflight"
   ],
-  "homepage": "https://github.com/hussnain-143/autoinvalidate#readme",
+  "homepage": "https://autoinvalidate-pi.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/hussnain-143/autoinvalidate.git",
@@ -29,7 +29,7 @@
     "url": "https://github.com/hussnain-143/autoinvalidate/issues"
   },
   "license": "MIT",
-  "author": "Husnain",
+  "author": "Husnain Ahmed (https://github.com/hussnain-143)",
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.cjs",
