@@ -1,85 +1,212 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
   <defs>
-    <linearGradient id="og-canvas" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0C0A09" />
-      <stop offset="45%" stop-color="#14110F" />
-      <stop offset="100%" stop-color="#171412" />
+    <!-- Background Canvas Gradients -->
+    <linearGradient id="bg-canvas" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0807" />
+      <stop offset="50%" stop-color="#120F0D" />
+      <stop offset="100%" stop-color="#161210" />
     </linearGradient>
-    <linearGradient id="og-grad" x1="0" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FF4438" />
-      <stop offset="50%" stop-color="#FB7185" />
-      <stop offset="100%" stop-color="#38BDF8" />
-    </linearGradient>
-    <radialGradient id="og-glow" cx="22%" cy="25%" r="50%">
-      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.22" />
+
+    <!-- Radial Brand Glows -->
+    <radialGradient id="glow-crimson" cx="15%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#FF4438" stop-opacity="0.04" />
       <stop offset="100%" stop-color="#FF4438" stop-opacity="0" />
     </radialGradient>
+    <radialGradient id="glow-cobalt" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Brand Text Gradient -->
+    <linearGradient id="text-brand-grad" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="65%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- Card Gradients & Borders -->
+    <linearGradient id="card-border" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#57534E" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="bolt-grad" x1="0" y1="0" x2="40" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FFE4E6" />
+      <stop offset="100%" stop-color="#FF4438" />
+    </linearGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#og-canvas)" />
-  <rect width="1200" height="630" fill="url(#og-glow)" />
+  <!-- Base Canvas -->
+  <rect width="1200" height="630" fill="url(#bg-canvas)" />
+  <rect width="1200" height="630" fill="url(#glow-crimson)" />
+  <rect width="1200" height="630" fill="url(#glow-cobalt)" />
 
-  <!-- Grid Accents -->
-  <g stroke="#292524" stroke-width="1" opacity="0.6">
-    <line x1="0" y1="126" x2="1200" y2="126" />
-    <line x1="0" y1="252" x2="1200" y2="252" />
-    <line x1="0" y1="378" x2="1200" y2="378" />
-    <line x1="0" y1="504" x2="1200" y2="504" />
-    <line x1="240" y1="0" x2="240" y2="630" />
-    <line x1="480" y1="0" x2="480" y2="630" />
-    <line x1="720" y1="0" x2="720" y2="630" />
-    <line x1="960" y1="0" x2="960" y2="630" />
+  <!-- Subtle Blueprint Tech Grid -->
+  <g stroke="#262220" stroke-width="1" opacity="0.65">
+    <line x1="0" y1="105" x2="1200" y2="105" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="150" y1="0" x2="150" y2="630" />
+    <line x1="350" y1="0" x2="350" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="850" y1="0" x2="850" y2="630" />
+    <line x1="1050" y1="0" x2="1050" y2="630" />
   </g>
 
-  <!-- Top Pill Badge -->
-  <rect x="72" y="60" width="375" height="44" rx="22" fill="#1C1917" stroke="#FF4438" stroke-width="1.75" />
-  <circle cx="98" cy="82" r="6" fill="#10B981" />
-  <text x="116" y="88" font-family="monospace" font-size="16" font-weight="700" fill="#FAF8F5">
-    npm install autoinvalidate
-  </text>
+  <!-- Top Navigation Pill Header -->
+  <g transform="translate(64, 46)">
+    <!-- Pill 1: Version & Status -->
+    <rect width="210" height="38" rx="19" fill="#1C1816" stroke="#3F3A35" stroke-width="1.2" />
+    <circle cx="20" cy="19" r="5" fill="#10B981" />
+    <text x="34" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#FAF8F5" letter-spacing="0.2">
+      v1.0.1 • LIVE ON NPM
+    </text>
 
-  <!-- Hero Lockup -->
-  <text x="72" y="195" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="900" letter-spacing="-2.5" fill="#FAF8F5">
-    auto<tspan fill="url(#og-grad)">invalidate</tspan>
-  </text>
-  <text x="72" y="260" font-family="Inter, system-ui, sans-serif" font-size="33" font-weight="700" fill="#E7E5E4">
-    The Zero-Config Database Query Cache
-  </text>
-  <text x="72" y="310" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="400" fill="#A8A29E">
-    In-Memory by Default • Distributed Ready • Auto-Invalidates on Every Write
-  </text>
+    <!-- Pill 2: Database Tech Stack -->
+    <rect x="224" width="190" height="38" rx="19" fill="#1C1816" stroke="#3F3A35" stroke-width="1.2" />
+    <text x="240" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#38BDF8">
+      PostgreSQL <tspan fill="#78716C">×</tspan> <tspan fill="#FF4438">Redis</tspan>
+    </text>
+  </g>
 
-  <!-- Benchmark Cards -->
-  <rect x="72" y="370" width="248" height="120" rx="18" fill="#14110F" stroke="#FF4438" stroke-opacity="0.5" stroke-width="2" />
-  <text x="96" y="424" font-family="monospace" font-size="38" font-weight="900" fill="#10B981">0.11 ms</text>
-  <text x="96" y="460" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A8A29E">Instant Cache Hit</text>
+  <!-- Left Hero Column -->
+  <g transform="translate(64, 126)">
+    <!-- Brand Logo Mark Squircle Icon -->
+    <g transform="translate(0, 0)">
+      <rect width="64" height="64" rx="18" fill="#181412" stroke="#FF4438" stroke-width="2" />
+      <!-- Inner Pulse -->
+      <circle cx="32" cy="32" r="22" stroke="#3F3A35" stroke-width="1" stroke-dasharray="2 2" />
+      <path d="M 32 14 A 18 18 0 0 1 50 32" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <path d="M 32 50 A 18 18 0 0 1 14 32" stroke="#FF4438" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <!-- Bolt -->
+      <path d="M 34 16 L 24 34 H 33 L 30 48 L 42 32 H 33 L 34 16 Z" fill="url(#bolt-grad)" />
+    </g>
 
-  <rect x="344" y="370" width="248" height="120" rx="18" fill="#14110F" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="2" />
-  <text x="368" y="424" font-family="monospace" font-size="38" font-weight="900" fill="#38BDF8">Zero Config</text>
-  <text x="368" y="460" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">In-Memory by Default</text>
+    <!-- Main Title -->
+    <text x="80" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" letter-spacing="-1.5" fill="#FAF8F5">
+      auto<tspan fill="url(#text-brand-grad)">invalidate</tspan>
+    </text>
 
-  <!-- Right Code Window -->
-  <rect x="630" y="118" width="504" height="404" rx="22" fill="#14110F" stroke="#44403C" stroke-width="2" />
-  <circle cx="662" cy="152" r="7" fill="#FF4438" />
-  <circle cx="684" cy="152" r="7" fill="#F59E0B" />
-  <circle cx="706" cy="152" r="7" fill="#10B981" />
-  <text x="734" y="157" font-family="monospace" font-size="14" font-weight="700" fill="#A8A29E">app.ts — Zero Setup</text>
+    <!-- Subtitle & Value Proposition -->
+    <text x="0" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="27" font-weight="800" fill="#FAF8F5" letter-spacing="-0.5">
+      Smart PostgreSQL Query Cache
+    </text>
+    <text x="0" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="600" fill="#FF5C50">
+      Auto-Invalidates on Every Write Mutation
+    </text>
 
-  <text x="660" y="212" font-family="monospace" font-size="16" fill="#FF4438">import</text>
-  <text x="730" y="212" font-family="monospace" font-size="16" fill="#FAF8F5">autoinvalidate from &apos;autoinvalidate&apos;;</text>
+    <text x="0" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="400" fill="#A8A29E">
+      Zero-config in-memory LRU by default • Scalable to Redis
+    </text>
+    <text x="0" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="400" fill="#A8A29E">
+      Singleflight stampede shield • Full transaction safety
+    </text>
 
-  <text x="660" y="254" font-family="monospace" font-size="15" fill="#78716C">// Wrap any database pool in 1 line:</text>
-  <text x="660" y="282" font-family="monospace" font-size="16" fill="#38BDF8">const</text>
-  <text x="718" y="282" font-family="monospace" font-size="16" fill="#FAF8F5">db = autoinvalidate(pool);</text>
+    <!-- Feature Stat Cards -->
+    <g transform="translate(0, 252)">
+      <!-- Card 1 -->
+      <rect width="154" height="88" rx="14" fill="#14110F" stroke="#2A2421" stroke-width="1.5" />
+      <text x="18" y="40" font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="800" fill="#10B981">
+        &lt; 0.1ms
+      </text>
+      <text x="18" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#78716C">
+        Cache Hit Latency
+      </text>
 
-  <text x="660" y="334" font-family="monospace" font-size="15" fill="#10B981">// 1. Automatic 0.1ms cache hit:</text>
-  <text x="660" y="362" font-family="monospace" font-size="16" fill="#FAF8F5">await db.query(&apos;SELECT * FROM users&apos;);</text>
+      <!-- Card 2 -->
+      <rect x="168" width="154" height="88" rx="14" fill="#14110F" stroke="#2A2421" stroke-width="1.5" />
+      <text x="186" y="40" font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="800" fill="#38BDF8">
+        1 Line
+      </text>
+      <text x="186" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#78716C">
+        pg.Pool Drop-In
+      </text>
 
-  <text x="660" y="414" font-family="monospace" font-size="15" fill="#FF4438">// 2. Mutation auto-evicts cached queries!</text>
-  <text x="660" y="442" font-family="monospace" font-size="16" fill="#FAF8F5">await db.query(&apos;UPDATE users SET ...&apos;);</text>
+      <!-- Card 3 -->
+      <rect x="336" width="154" height="88" rx="14" fill="#14110F" stroke="#2A2421" stroke-width="1.5" />
+      <text x="354" y="40" font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="800" fill="#FF4438">
+        O(1)
+      </text>
+      <text x="354" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#78716C">
+        Atomic Redis Sets
+      </text>
+    </g>
+  </g>
 
-  <!-- Footer -->
-  <text x="72" y="572" font-family="monospace" font-size="18" font-weight="700" fill="#78716C">
-    autoinvalidate v1.0.0 • Open Source MIT • Zero Setup • High-Throughput
-  </text>
+  <!-- Right Column: Interactive Code Terminal Window -->
+  <g transform="translate(606, 116)">
+    <!-- Glow behind code window -->
+    <rect width="530" height="428" rx="20" fill="#14110F" stroke="url(#card-border)" stroke-width="1.8" />
+    
+    <!-- Window Header -->
+    <rect width="530" height="46" rx="20" fill="#1B1715" />
+    <rect y="26" width="530" height="20" fill="#1B1715" />
+    <circle cx="26" cy="23" r="6.5" fill="#EF4444" />
+    <circle cx="48" cy="23" r="6.5" fill="#F59E0B" />
+    <circle cx="70" cy="23" r="6.5" fill="#10B981" />
+    <text x="100" y="28" font-family="ui-monospace, Menlo, monospace" font-size="13.5" font-weight="700" fill="#A8A29E">
+      db.ts — PostgreSQL Auto-Caching
+    </text>
+
+    <!-- Code Content -->
+    <g transform="translate(28, 76)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14.5" line-height="1.6">
+      <!-- Line 1 -->
+      <text y="0" fill="#F43F5E" font-weight="600">import</text>
+      <text x="64" y="0" fill="#FAF8F5">autoinvalidate</text>
+      <text x="200" y="0" fill="#F43F5E" font-weight="600">from</text>
+      <text x="246" y="0" fill="#38BDF8">&apos;autoinvalidate&apos;</text>
+      <text x="390" y="0" fill="#FAF8F5">;</text>
+
+      <!-- Line 2 -->
+      <text y="32" fill="#78716C">// Wrap your existing PostgreSQL pool in 1 line:</text>
+      
+      <!-- Line 3 -->
+      <text y="64" fill="#38BDF8" font-weight="600">export const</text>
+      <text x="120" y="64" fill="#FAF8F5">db = </text>
+      <text x="165" y="64" fill="#FF5C50">autoinvalidate</text>
+      <text x="290" y="64" fill="#FAF8F5">(rawPool);</text>
+
+      <!-- Line 4 (Divider) -->
+      <line x1="0" y1="96" x2="474" y2="96" stroke="#292421" stroke-width="1" />
+
+      <!-- Line 5 -->
+      <text y="126" fill="#10B981" font-weight="600">// 1️⃣ SELECT query -&gt; Instant 0.09ms cache hit</text>
+      <text y="154" fill="#38BDF8">const</text>
+      <text x="50" y="154" fill="#FAF8F5">orders = </text>
+      <text x="128" y="154" fill="#F43F5E">await</text>
+      <text x="178" y="154" fill="#FAF8F5">db.query(</text>
+      <text y="180" fill="#FDE047">  &apos;SELECT * FROM orders JOIN users ...&apos;</text>
+      <text y="206" fill="#FAF8F5">);</text>
+
+      <!-- Line 6 -->
+      <text y="246" fill="#FF4438" font-weight="600">// 2️⃣ Write mutation -&gt; Auto-purges affected cache!</text>
+      <text y="274" fill="#F43F5E">await</text>
+      <text x="50" y="274" fill="#FAF8F5">db.query(</text>
+      <text y="300" fill="#FDE047">  &apos;UPDATE orders SET status = $1 WHERE id = $2&apos;</text>
+      <text y="326" fill="#FAF8F5">);</text>
+    </g>
+  </g>
+
+  <!-- Bottom Bar: Install Command & Social Footprint -->
+  <g transform="translate(64, 574)">
+    <!-- Terminal Install Box -->
+    <rect width="360" height="36" rx="8" fill="#14110F" stroke="#292421" stroke-width="1.2" />
+    <text x="16" y="23" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#FF4438">
+      $ <tspan fill="#FAF8F5">npm install autoinvalidate pg</tspan>
+    </text>
+
+    <!-- URLs -->
+    <text x="400" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#78716C">
+      GitHub: <tspan fill="#FAF8F5">hussnain-143/autoinvalidate</tspan>
+    </text>
+
+    <text x="820" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#78716C">
+      Website: <tspan fill="#38BDF8">autoinvalidate-pi.vercel.app</tspan>
+    </text>
+  </g>
 </svg>
