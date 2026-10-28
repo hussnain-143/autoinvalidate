@@ -9,6 +9,8 @@
 ### Zero-Config PostgreSQL (`pg`) & Redis Query Cache with Automatic Write Invalidation
 
 [![npm version](https://img.shields.io/npm/v/autoinvalidate.svg?style=flat-square&color=FF4438)](https://www.npmjs.com/package/autoinvalidate)
+[![CI](https://github.com/hussnain-143/autoinvalidate/actions/workflows/ci.yml/badge.svg)](https://github.com/hussnain-143/autoinvalidate/actions/workflows/ci.yml)
+[![Website](https://img.shields.io/badge/Website-autoinvalidate--pi.vercel.app-10b981?style=flat-square)](https://autoinvalidate-pi.vercel.app/)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-hussnain--143%2Fautoinvalidate-181717?style=flat-square&logo=github)](https://github.com/hussnain-143/autoinvalidate)
 [![Default In-Memory](https://img.shields.io/badge/Store-In--Memory%20(Default)-10b981?style=flat-square)](#)
 [![Redis Optional](https://img.shields.io/badge/Distributed-Redis%20Ready-336791?style=flat-square)](https://redis.io/)

@@ -9,12 +9,14 @@
 ### Zero-Config PostgreSQL (`pg`) & Redis Query Cache with Automatic Write Invalidation
 
 [![npm version](https://img.shields.io/npm/v/autoinvalidate.svg?style=flat-square&color=FF4438)](https://www.npmjs.com/package/autoinvalidate)
+[![CI](https://github.com/hussnain-143/autoinvalidate/actions/workflows/ci.yml/badge.svg)](https://github.com/hussnain-143/autoinvalidate/actions/workflows/ci.yml)
+[![Website](https://img.shields.io/badge/Website-autoinvalidate--pi.vercel.app-10b981?style=flat-square)](https://autoinvalidate-pi.vercel.app/)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-hussnain--143%2Fautoinvalidate-181717?style=flat-square&logo=github)](https://github.com/hussnain-143/autoinvalidate)
 [![Tests](https://img.shields.io/badge/Tests-Passing%20(9%2F9)-10b981?style=flat-square)](https://github.com/hussnain-143/autoinvalidate)
 [![Default Store](https://img.shields.io/badge/Store-In--Memory%20LRU%20(Default)-10b981?style=flat-square)](#)
 [![Redis Optional](https://img.shields.io/badge/Distributed-Redis%20Ready-336791?style=flat-square)](https://redis.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=flat-square)](https://www.typescriptlang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](https://github.com/hussnain-143/autoinvalidate/blob/main/LICENSE)
 
 <p align="center">
   <a href="#-quickstart">Quickstart</a> •
