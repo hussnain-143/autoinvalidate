@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" fill="none">
+  <defs>
+    <!-- Background Canvas Gradients -->
+    <linearGradient id="wa-canvas" x1="0" y1="0" x2="1080" y2="1920" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0807" />
+      <stop offset="40%" stop-color="#120F0D" />
+      <stop offset="80%" stop-color="#14110F" />
+      <stop offset="100%" stop-color="#0D0B0A" />
+    </linearGradient>
+
+    <!-- Radial Brand Glows -->
+    <radialGradient id="wa-glow-top" cx="50%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.28" />
+      <stop offset="60%" stop-color="#FF4438" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#FF4438" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="wa-glow-bot" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.22" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Brand Text Gradient -->
+    <linearGradient id="wa-brand-grad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="60%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- Card Borders -->
+    <linearGradient id="wa-card-border" x1="0" y1="0" x2="920" y2="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#44403C" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="wa-bolt-grad" x1="0" y1="0" x2="60" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FFE4E6" />
+      <stop offset="100%" stop-color="#FF4438" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1080" height="1920" fill="url(#wa-canvas)" />
+  <rect width="1080" height="1920" fill="url(#wa-glow-top)" />
+  <rect width="1080" height="1920" fill="url(#wa-glow-bot)" />
+
+  <!-- Subtle Blueprint Tech Grid -->
+  <g stroke="#262220" stroke-width="1.2" opacity="0.6">
+    <line x1="0" y1="320" x2="1080" y2="320" />
+    <line x1="0" y1="640" x2="1080" y2="640" />
+    <line x1="0" y1="960" x2="1080" y2="960" />
+    <line x1="0" y1="1280" x2="1080" y2="1280" />
+    <line x1="0" y1="1600" x2="1080" y2="1600" />
+    <line x1="216" y1="0" x2="216" y2="1920" />
+    <line x1="432" y1="0" x2="432" y2="1920" />
+    <line x1="648" y1="0" x2="648" y2="1920" />
+    <line x1="864" y1="0" x2="864" y2="1920" />
+  </g>
+
+  <!-- Top Pill Badges -->
+  <g transform="translate(140, 160)">
+    <rect width="360" height="56" rx="28" fill="#1C1816" stroke="#FF4438" stroke-width="1.6" />
+    <circle cx="32" cy="28" r="8" fill="#10B981" />
+    <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FAF8F5" letter-spacing="0.5">
+      🚀 v1.0.1 LIVE ON NPM
+    </text>
+
+    <rect x="380" width="420" height="56" rx="28" fill="#1C1816" stroke="#38BDF8" stroke-width="1.6" />
+    <text x="410" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#38BDF8">
+      PostgreSQL <tspan fill="#78716C">×</tspan> <tspan fill="#FF4438">Redis Cache</tspan>
+    </text>
+  </g>
+
+  <!-- Brand Mark Icon (Centered) -->
+  <g transform="translate(480, 260)">
+    <rect width="120" height="120" rx="34" fill="#181412" stroke="#FF4438" stroke-width="3" />
+    <circle cx="60" cy="60" r="42" stroke="#3F3A35" stroke-width="1.8" stroke-dasharray="4 4" />
+    <path d="M 60 22 A 38 38 0 0 1 98 60" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 60 98 A 38 38 0 0 1 22 60" stroke="#FF4438" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M 64 24 L 46 64 H 61 L 56 96 L 78 60 H 62 L 64 24 Z" fill="url(#wa-bolt-grad)" />
+  </g>
+
+  <!-- Main Headline (Centered) -->
+  <text x="540" y="440" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" letter-spacing="-2" fill="#FAF8F5">
+    auto<tspan fill="url(#wa-brand-grad)">invalidate</tspan>
+  </text>
+
+  <text x="540" y="505" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#FAF8F5">
+    Smart Database Query Cache
+  </text>
+  <text x="540" y="555" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="600" fill="#FF5C50">
+    ⚡ Auto-Invalidates on Every Write Mutation
+  </text>
+
+  <!-- Big Code Card (Center Stage) -->
+  <g transform="translate(80, 620)">
+    <rect width="920" height="640" rx="28" fill="#14110F" stroke="url(#wa-card-border)" stroke-width="2.5" />
+    
+    <!-- Code Window Titlebar -->
+    <rect width="920" height="66" rx="28" fill="#1B1715" />
+    <rect y="38" width="920" height="28" fill="#1B1715" />
+    <circle cx="36" cy="33" r="9" fill="#EF4444" />
+    <circle cx="68" cy="33" r="9" fill="#F59E0B" />
+    <circle cx="100" cy="33" r="9" fill="#10B981" />
+    <text x="140" y="40" font-family="ui-monospace, Menlo, monospace" font-size="20" font-weight="700" fill="#A8A29E">
+      db.ts — Drop-In PostgreSQL Proxy
+    </text>
+
+    <!-- Code Syntax Lines -->
+    <g transform="translate(48, 120)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" line-height="1.7">
+      <text y="0" fill="#F43F5E" font-weight="600">import</text>
+      <text x="96" y="0" fill="#FAF8F5">autoinvalidate</text>
+      <text x="300" y="0" fill="#F43F5E" font-weight="600">from</text>
+      <text x="370" y="0" fill="#38BDF8">&apos;autoinvalidate&apos;</text>
+      <text x="590" y="0" fill="#FAF8F5">;</text>
+
+      <text y="48" fill="#78716C">// ⚡ Wrap your pool in 1 line:</text>
+      
+      <text y="96" fill="#38BDF8" font-weight="600">export const</text>
+      <text x="180" y="96" fill="#FAF8F5">db = </text>
+      <text x="245" y="96" fill="#FF5C50">autoinvalidate</text>
+      <text x="440" y="96" fill="#FAF8F5">(rawPool);</text>
+
+      <!-- Horizontal Divider -->
+      <line x1="0" y1="140" x2="824" y2="140" stroke="#2B2623" stroke-width="1.5" />
+
+      <!-- Query 1 -->
+      <text y="186" fill="#10B981" font-weight="700">// 1️⃣ SELECT -&gt; Instant &lt; 0.1ms cache hit:</text>
+      <text y="226" fill="#38BDF8">const</text>
+      <text x="75" y="226" fill="#FAF8F5">res = </text>
+      <text x="160" y="226" fill="#F43F5E">await</text>
+      <text x="245" y="226" fill="#FAF8F5">db.query(</text>
+      <text y="266" fill="#FDE047">  &apos;SELECT * FROM users JOIN orders ...&apos;</text>
+      <text y="306" fill="#FAF8F5">);</text>
+
+      <!-- Query 2 -->
+      <text y="366" fill="#FF4438" font-weight="700">// 2️⃣ Write -&gt; Auto-purges affected cache!</text>
+      <text y="406" fill="#F43F5E">await</text>
+      <text x="80" y="406" fill="#FAF8F5">db.query(</text>
+      <text y="446" fill="#FDE047">  &apos;UPDATE orders SET total = $1 WHERE id = $2&apos;</text>
+      <text y="486" fill="#FAF8F5">);</text>
+    </g>
+  </g>
+
+  <!-- 3 Big Metric Feature Badges -->
+  <g transform="translate(80, 1300)">
+    <!-- Badge 1 -->
+    <rect width="286" height="150" rx="22" fill="#14110F" stroke="#2B2623" stroke-width="2" />
+    <text x="32" y="65" font-family="ui-monospace, Menlo, monospace" font-size="44" font-weight="900" fill="#10B981">
+      &lt; 0.1ms
+    </text>
+    <text x="32" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#A8A29E">
+      Cache Hit Latency
+    </text>
+
+    <!-- Badge 2 -->
+    <rect x="316" width="286" height="150" rx="22" fill="#14110F" stroke="#2B2623" stroke-width="2" />
+    <text x="348" y="65" font-family="ui-monospace, Menlo, monospace" font-size="44" font-weight="900" fill="#38BDF8">
+      1 Line
+    </text>
+    <text x="348" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#A8A29E">
+      Zero Boilerplate
+    </text>
+
+    <!-- Badge 3 -->
+    <rect x="632" width="286" height="150" rx="22" fill="#14110F" stroke="#2B2623" stroke-width="2" />
+    <text x="664" y="65" font-family="ui-monospace, Menlo, monospace" font-size="44" font-weight="900" fill="#FF4438">
+      O(1)
+    </text>
+    <text x="664" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#A8A29E">
+      Redis Sets (0 SCAN)
+    </text>
+  </g>
+
+  <!-- Install Terminal Box -->
+  <g transform="translate(80, 1490)">
+    <rect width="920" height="90" rx="20" fill="#181412" stroke="#FF4438" stroke-width="2" />
+    <text x="40" y="55" font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="800" fill="#FF4438">
+      $ <tspan fill="#FAF8F5">npm install autoinvalidate pg</tspan>
+    </text>
+  </g>
+
+  <!-- Footer Info & URLs -->
+  <g transform="translate(540, 1660)" text-anchor="middle">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="700" fill="#FAF8F5">
+      Developed with ❤️ by Hussnain Ahmed
+    </text>
+    <text y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="600" fill="#38BDF8">
+      🌐 autoinvalidate-pi.vercel.app
+    </text>
+    <text y="90" font-family="ui-monospace, Menlo, monospace" font-size="19" font-weight="600" fill="#78716C">
+      GitHub: github.com/hussnain-143/autoinvalidate
+    </text>
+  </g>
+</svg>
