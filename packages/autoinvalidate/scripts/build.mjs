@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { stripTypeScriptTypes } from 'node:module';
 import { fileURLToPath } from 'node:url';
+import ts from 'typescript';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const pkgRoot = path.resolve(__dirname, '..');
@@ -33,14 +33,23 @@ for (const relPath of moduleOrder) {
     .trim();
   if (relPath === 'types.ts') {
     bundledDtsBody += cleanedForDts + '\n\n';
+    // types.ts has only type definitions; no runtime code needed
+    continue;
   }
 
-  // Strip TypeScript types using Node 24 native API
-  const jsCode = stripTypeScriptTypes(rawTs, { mode: 'strip' });
+  // Strip TypeScript types across all Node.js versions (Node 18, 20, 22+)
+  const jsCode = ts.transpileModule(rawTs, {
+    compilerOptions: {
+      target: ts.ScriptTarget.ES2022,
+      module: ts.ModuleKind.ESNext,
+      removeComments: false
+    }
+  }).outputText;
 
   // Remove internal imports since we bundle into a single clean zero-dep artifact
   const withoutImports = jsCode
     .replace(/^import\s+.*?;?\s*$/gm, '')
+    .replace(/^export\s*\{\s*\};?\s*$/gm, '')
     .replace(/^export\s+\{\s*createAutoInvalidatePg\s+as\s+autoinvalidate\s*\};?\s*$/gm, '')
     .trim();
 
@@ -138,7 +147,7 @@ const cjsBody = bundledEsmBody
   .replace(`import { performance } from 'node:perf_hooks';`, `const { performance } = require('node:perf_hooks');`)
   .replace(/^export\s+(async\s+)?function\s+([a-zA-Z0-9_]+)/gm, '$1function $2')
   .replace(/^export\s+class\s+([a-zA-Z0-9_]+)/gm, 'class $1')
-  .replace(/^export\s+\{\s*createAutoInvalidatePg\s+as\s+autoinvalidate\s*\};?/gm, '')
+  .replace(/^export\s*\{[^}]*\};?\s*$/gm, '')
   .replace(/^export\s+default\s+createAutoInvalidatePg;?/gm, '') +
   `\nfunction defaultExport(...args) { return createAutoInvalidatePg(...args); }\n` +
   `defaultExport.createAutoInvalidatePg = createAutoInvalidatePg;\n` +
