@@ -1,6 +1,6 @@
 {
   "name": "autoinvalidate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-config PostgreSQL (pg) + Redis query cache that automatically invalidates cached queries when tables or rows are mutated.",
   "keywords": [
     "postgresql",

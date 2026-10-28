@@ -1,6 +1,12 @@
-# ⚡ `autoinvalidate`
+<div align="center">
 
-> **The zero-config database query cache that automatically invalidates cached queries on every write. Built-in In-Memory LRU by default, seamlessly scalable to distributed Redis.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-light.svg">
+  <img alt="autoinvalidate logo" src="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-dark.svg" width="480">
+</picture>
+
+### Zero-Config PostgreSQL (`pg`) & Redis Query Cache with Automatic Write Invalidation
 
 [![npm version](https://img.shields.io/npm/v/autoinvalidate.svg?style=flat-square&color=FF4438)](https://www.npmjs.com/package/autoinvalidate)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-hussnain--143%2Fautoinvalidate-181717?style=flat-square&logo=github)](https://github.com/hussnain-143/autoinvalidate)
@@ -8,6 +14,12 @@
 [![Redis Optional](https://img.shields.io/badge/Distributed-Redis%20Ready-336791?style=flat-square)](https://redis.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=flat-square)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](https://github.com/hussnain-143/autoinvalidate/blob/main/LICENSE)
+
+</div>
+
+---
+
+> **The zero-config database query cache that automatically invalidates cached queries on every write. Built-in In-Memory LRU by default, seamlessly scalable to distributed Redis.**
 
 > *"There are only two hard things in Computer Science: cache invalidation and naming things."* — Phil Karlton
 

@@ -1,6 +1,6 @@
 {
   "name": "autoinvalidate-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Monorepo for autoinvalidate npm package, Next.js SEO documentation website, and official brand & launch kit.",
   "workspaces": [

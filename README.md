@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="./branding/logos/logo-full-dark.svg" alt="autoinvalidate logo" width="460" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-light.svg">
+  <img alt="autoinvalidate logo" src="https://raw.githubusercontent.com/hussnain-143/autoinvalidate/main/branding/logos/logo-full-dark.svg" width="480">
+</picture>
 
 ### Zero-Config PostgreSQL (`pg`) & Redis Query Cache with Automatic Write Invalidation
 
