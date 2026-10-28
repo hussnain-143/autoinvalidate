@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <linearGradient id="og-canvas" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C0A09" />
+      <stop offset="45%" stop-color="#14110F" />
+      <stop offset="100%" stop-color="#171412" />
+    </linearGradient>
+    <linearGradient id="og-grad" x1="0" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4438" />
+      <stop offset="50%" stop-color="#FB7185" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <radialGradient id="og-glow" cx="22%" cy="25%" r="50%">
+      <stop offset="0%" stop-color="#FF4438" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#FF4438" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#og-canvas)" />
+  <rect width="1200" height="630" fill="url(#og-glow)" />
+
+  <!-- Grid Accents -->
+  <g stroke="#292524" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="126" x2="1200" y2="126" />
+    <line x1="0" y1="252" x2="1200" y2="252" />
+    <line x1="0" y1="378" x2="1200" y2="378" />
+    <line x1="0" y1="504" x2="1200" y2="504" />
+    <line x1="240" y1="0" x2="240" y2="630" />
+    <line x1="480" y1="0" x2="480" y2="630" />
+    <line x1="720" y1="0" x2="720" y2="630" />
+    <line x1="960" y1="0" x2="960" y2="630" />
+  </g>
+
+  <!-- Top Pill Badge -->
+  <rect x="72" y="60" width="375" height="44" rx="22" fill="#1C1917" stroke="#FF4438" stroke-width="1.75" />
+  <circle cx="98" cy="82" r="6" fill="#10B981" />
+  <text x="116" y="88" font-family="monospace" font-size="16" font-weight="700" fill="#FAF8F5">
+    npm install autoinvalidate
+  </text>
+
+  <!-- Hero Lockup -->
+  <text x="72" y="195" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="900" letter-spacing="-2.5" fill="#FAF8F5">
+    auto<tspan fill="url(#og-grad)">invalidate</tspan>
+  </text>
+  <text x="72" y="260" font-family="Inter, system-ui, sans-serif" font-size="33" font-weight="700" fill="#E7E5E4">
+    The Zero-Config Database Query Cache
+  </text>
+  <text x="72" y="310" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="400" fill="#A8A29E">
+    In-Memory by Default • Distributed Ready • Auto-Invalidates on Every Write
+  </text>
+
+  <!-- Benchmark Cards -->
+  <rect x="72" y="370" width="248" height="120" rx="18" fill="#14110F" stroke="#FF4438" stroke-opacity="0.5" stroke-width="2" />
+  <text x="96" y="424" font-family="monospace" font-size="38" font-weight="900" fill="#10B981">0.11 ms</text>
+  <text x="96" y="460" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A8A29E">Instant Cache Hit</text>
+
+  <rect x="344" y="370" width="248" height="120" rx="18" fill="#14110F" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="2" />
+  <text x="368" y="424" font-family="monospace" font-size="38" font-weight="900" fill="#38BDF8">Zero Config</text>
+  <text x="368" y="460" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">In-Memory by Default</text>
+
+  <!-- Right Code Window -->
+  <rect x="630" y="118" width="504" height="404" rx="22" fill="#14110F" stroke="#44403C" stroke-width="2" />
+  <circle cx="662" cy="152" r="7" fill="#FF4438" />
+  <circle cx="684" cy="152" r="7" fill="#F59E0B" />
+  <circle cx="706" cy="152" r="7" fill="#10B981" />
+  <text x="734" y="157" font-family="monospace" font-size="14" font-weight="700" fill="#A8A29E">app.ts — Zero Setup</text>
+
+  <text x="660" y="212" font-family="monospace" font-size="16" fill="#FF4438">import</text>
+  <text x="730" y="212" font-family="monospace" font-size="16" fill="#FAF8F5">autoinvalidate from &apos;autoinvalidate&apos;;</text>
+
+  <text x="660" y="254" font-family="monospace" font-size="15" fill="#78716C">// Wrap any database pool in 1 line:</text>
+  <text x="660" y="282" font-family="monospace" font-size="16" fill="#38BDF8">const</text>
+  <text x="718" y="282" font-family="monospace" font-size="16" fill="#FAF8F5">db = autoinvalidate(pool);</text>
+
+  <text x="660" y="334" font-family="monospace" font-size="15" fill="#10B981">// 1. Automatic 0.1ms cache hit:</text>
+  <text x="660" y="362" font-family="monospace" font-size="16" fill="#FAF8F5">await db.query(&apos;SELECT * FROM users&apos;);</text>
+
+  <text x="660" y="414" font-family="monospace" font-size="15" fill="#FF4438">// 2. Mutation auto-evicts cached queries!</text>
+  <text x="660" y="442" font-family="monospace" font-size="16" fill="#FAF8F5">await db.query(&apos;UPDATE users SET ...&apos;);</text>
+
+  <!-- Footer -->
+  <text x="72" y="572" font-family="monospace" font-size="18" font-weight="700" fill="#78716C">
+    autoinvalidate v1.0.0 • Open Source MIT • Zero Setup • High-Throughput
+  </text>
+</svg>
