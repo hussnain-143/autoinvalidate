@@ -35,3 +35,4 @@ jobs:
 
       - name: Build Web Docs App
         run: npm run build:web
+
