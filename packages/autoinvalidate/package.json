@@ -22,7 +22,7 @@
   "homepage": "https://autoinvalidate-pi.vercel.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hussnain-143/autoinvalidate.git",
+    "url": "git+https://github.com/hussnain-143/autoinvalidate.git",
     "directory": "packages/autoinvalidate"
   },
   "bugs": {
